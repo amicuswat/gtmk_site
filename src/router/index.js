@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
+import MainPage from "@/pages/MainPage";
+import AboutPage from "@/pages/AboutPage";
 
 const routes = [
   {
-    // path: '/',
-    // name: 'home',
-    // component: HomeView
-  }
+    path: '/',
+    name: 'main',
+    component: MainPage
+  },
+   {
+    path: '/about/',
+    name: 'about',
+    component: AboutPage
+  },
 ]
 
 const router = createRouter({
